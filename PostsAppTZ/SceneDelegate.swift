@@ -39,6 +39,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [postsVC, favoritesVC, settingsVC]
 
+       
+        
         window.rootViewController = tabBarController
         self.window = window
         window.makeKeyAndVisible()
