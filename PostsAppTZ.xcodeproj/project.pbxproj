@@ -11,6 +11,8 @@
 		D3BF6DF22E32541500458C73 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BF6DF12E32541500458C73 /* PostsViewModel.swift */; };
 		D3BF6DF62E35019500458C73 /* Contraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BF6DF52E35019500458C73 /* Contraints.swift */; };
 		D3BF6DF82E3588B100458C73 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BF6DF72E3588B100458C73 /* TableViewCell.swift */; };
+		D3BF6DFB2E36542600458C73 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D3BF6DFA2E36542600458C73 /* Alamofire */; };
+		D3BF6DFE2E3655DC00458C73 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D3BF6DFD2E3655DC00458C73 /* SDWebImage */; };
 		D3D991E92E213978008188F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D991E82E213978008188F6 /* AppDelegate.swift */; };
 		D3D991EB2E213978008188F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D991EA2E213978008188F6 /* SceneDelegate.swift */; };
 		D3D991F22E21397B008188F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D991F12E21397B008188F6 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BF6DFE2E3655DC00458C73 /* SDWebImage in Frameworks */,
+				D3BF6DFB2E36542600458C73 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +126,10 @@
 			dependencies = (
 			);
 			name = PostsAppTZ;
+			packageProductDependencies = (
+				D3BF6DFA2E36542600458C73 /* Alamofire */,
+				D3BF6DFD2E3655DC00458C73 /* SDWebImage */,
+			);
 			productName = PostsAppTZ;
 			productReference = D3D991E52E213978008188F6 /* PostsAppTZ.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +158,10 @@
 				Base,
 			);
 			mainGroup = D3D991DC2E213978008188F6;
+			packageReferences = (
+				D3BF6DF92E36542600458C73 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D3BF6DFC2E3655DC00458C73 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = D3D991E62E213978008188F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,6 +409,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3BF6DF92E36542600458C73 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		D3BF6DFC2E3655DC00458C73 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3BF6DFA2E36542600458C73 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3BF6DF92E36542600458C73 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D3BF6DFD2E3655DC00458C73 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3BF6DFC2E3655DC00458C73 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3D991DD2E213978008188F6 /* Project object */;
 }
