@@ -19,13 +19,12 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Posts"
         configureTableView()
         setupTableViewConstraints(tableView)
 
         // Load favorites to track which posts are favorited
         loadFavoritePostIds()
-
         viewModel.fetchPosts { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()

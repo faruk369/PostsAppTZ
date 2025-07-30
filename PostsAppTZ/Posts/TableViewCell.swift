@@ -43,9 +43,6 @@ class TableViewCell: UITableViewCell {
         postTextLabel.font = UIFont.systemFont(ofSize: 14)
         postTextLabel.numberOfLines = 0
 
-       // contentView.addSubview(profileImageView)
-       // contentView.addSubview(usernameLabel)
-       // contentView.addSubview(postTextLabel)
     }
 
     func configure(with post: Post) {
