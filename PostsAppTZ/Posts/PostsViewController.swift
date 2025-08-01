@@ -25,6 +25,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
         // Load favorites to track which posts are favorited
         loadFavoritePostIds()
+        // closure way
         viewModel.fetchPosts { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol TableViewCellDelegate: AnyObject {
+    func didTapFavoriteButton(on cell: TableViewCell)
+}
+
 class TableViewCell: UITableViewCell {
 
     weak var delegate: TableViewCellDelegate?
@@ -78,6 +82,4 @@ class TableViewCell: UITableViewCell {
        }
 }
 
-protocol TableViewCellDelegate: AnyObject {
-    func didTapFavoriteButton(on cell: TableViewCell)
-}
+
